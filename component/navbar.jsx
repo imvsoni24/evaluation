@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 const Navbar = () => {
   return (
-    <div>
+    <div style={{display:"flex",justifyContent:"space-evenly",fontSize:"20px"}}>
        <Link href="/">Vivek Soni</Link>
-       <Link href="/project">Project</Link>
+       <Link href="/project">Projects</Link>
        <Link href="/education">Education</Link>
     </div>
   )
