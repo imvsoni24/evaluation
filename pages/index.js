@@ -13,35 +13,35 @@ export default function Index({data}){
   }
   console.log(data)
   return (
-    <div style={{display:"flex",justifyContent:"space-around",marginTop:"50px"}}>
+    <div style={{display:"flex",justifyContent:"space-around",backgroundColor:"lightblue"}}>
       <div>
-      <Image width={"250"} height={"250"} src={data.avatar_url} alt="hello"/>
-      <h2>{data.name}</h2>
-      <h4 onClick={handleClick3} style={{cursor:"pointer"}}>{data.login}</h4>
-      <h2>{data.bio}</h2>
-      <div>
-        <button style={{cursor:"pointer"}} onClick={handleClick1}>Resume</button>
-        <button style={{cursor:"pointer"}} onClick={handleClick2}>Follow</button>
+      <Image style={{borderRadious:"50%"}} width={"250"} height={"250"} src={data.avatar_url} alt="hello"/>
+      <h2 style={{textAlign:"center",color:"teal"}}>{data.name}</h2>
+      <h4 style={{textAlign:"center",color:"teal",cursor:"pointer"}} onClick={handleClick3}>{data.login}</h4>
+      <h2 style={{color:"teal"}}>{data.bio}</h2>
+      <div style={{marginTop:"20px"}}>
+        <button style={{cursor:"pointer",backgroundColor:"teal",color:"white",padding:"10px"}} onClick={handleClick1}>Resume</button>
+        <button style={{cursor:"pointer",backgroundColor:"teal",color:"white",padding:"10px",marginLeft:"100px"}} onClick={handleClick2}>Follow</button>
       </div>
-      <div>
-        <h1>Tech Stack</h1>
+      <div style={{textAlign:"center",color:"teal"}}>
+        <h1 style={{color:"Teal",fontSize:"30px",textAlign:"center"}}>Tech Stack</h1>
         <span>HTML</span><br /><span>CSS</span><br /><span>JavaScript</span><br /><span>React JS</span><br /><span>Next JS</span><br /><span>Redux</span><br /><span>Chakra UI</span>
       </div>
     </div>
     <div>
-    <h1>EDUCATION</h1>
-       <div><h2>Full Stack Web Development (Full Time)</h2>
-      <h3>Masai School</h3>
+    <h1 style={{color:"Teal",fontSize:"30px",textAlign:"black",}}>EDUCATION</h1>
+       <div style={{color:"Teal",fontSize:"30px",textAlign:"center",border:"1px solid teal"}}><h2>Full Stack Web Development (Full Time)</h2>
+      <h3 style={{color:"Teal",fontSize:"30px",textAlign:"center"}}>Masai School</h3>
       <p>07/2022 – present</p></div>
-      <div>
-      <h2>BSc In Computer Application</h2>
-<h3>CSJM University</h3>
-<p>08/2017 – 02/2021 | Kanpur, India</p>
+      <div style={{border:"1px solid black"}}>
+      <h2 style={{color:"Teal",fontSize:"30px",textAlign:"center"}}>BSc In Computer Application</h2>
+<h3 style={{color:"Teal",fontSize:"30px",textAlign:"center"}}>CSJM University</h3>
+<p style={{color:"Teal",fontSize:"30px",textAlign:"center"}}>08/2017 – 02/2021 | Kanpur, India</p>
       </div>
-      <div>
-      <h2>Intermediate</h2>
-<h3>UP Board</h3>
-<p>07/2016 – 04/2017 | Kanpur, India</p>
+      <div style={{border:"1px solid black"}}>
+      <h2 style={{color:"Teal",fontSize:"30px",textAlign:"center"}}>Intermediate</h2>
+<h3 style={{color:"Teal",fontSize:"30px",textAlign:"center"}}>UP Board</h3>
+<p style={{color:"Teal",fontSize:"30px",textAlign:"center"}}>07/2016 – 04/2017 | Kanpur, India</p>
       </div>
     </div>
     </div>
